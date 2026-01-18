@@ -9,7 +9,7 @@ class Main {
         for(int i=0;i<n;i++){
         long id = sc.nextLong();
         long count = sc.nextLong();
-        String status = sc.nextLine();
+        String status = sc.next();
         long delta = status.equals("E") ? count : -count;
         mp.put(id,mp.getOrDefault(id,0L)+delta);
         }
