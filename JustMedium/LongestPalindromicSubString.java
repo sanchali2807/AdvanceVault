@@ -8,7 +8,7 @@ class Solution {
     }
     public String longestPalindrome(String s) {
         int n = s.length();
-        String max = " ";
+        String max = s.substring(0,1);
         for(int i=0;i<n;i++){
             String odd = extend(s,i,i);
             String even = extend(s,i,i+1);
