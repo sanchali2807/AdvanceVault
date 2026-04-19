@@ -52,10 +52,12 @@ public class Main {
             return;
         }
         visited[node] = true; 
+        // this marks every node 
         System.out.println(node);
         for(int nei : adj.get(node)){
             if(!visited[nei]){
                 // visited[nei] = true;
+                // not here only marks the neighbour
                 dfs(visited,adj,nei);
             }
         }
